@@ -1,5 +1,5 @@
 channel = "{{cfg.channel}}"
-{{~#eachAlive bind.redis.members as |member|}}
+{{~#eachAlive bind.cache.members as |member|}}
 [redis]
 hostname = "{{member.sys.ip}}"
 port = "{{member.cfg.port}}"
