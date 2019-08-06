@@ -9,5 +9,5 @@ pkg_scaffolding=core/scaffolding-go
 scaffolding_go_module=on
 pkg_svc_run="go-redis-reader -c=${pkg_svc_config_path}/config.toml"
 pkg_binds=(
-  [redis]="port"
+  [cache]="port"
 )
